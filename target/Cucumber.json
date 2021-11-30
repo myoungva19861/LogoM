@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-11-30T14:40:00.410Z",
+        "start_timestamp": "2021-11-30T15:58:25.620Z",
         "line": 4,
         "name": "Validating ability to submit a contact form",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3127000000,
+              "duration": 3478000000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 854000000,
+              "duration": 964000000,
               "status": "passed"
             },
             "line": 7,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 7044000000,
+              "duration": 7224000000,
               "status": "passed"
             },
             "line": 8,

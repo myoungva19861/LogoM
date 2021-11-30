@@ -24,21 +24,19 @@ import org.junit.Test;
 
 public class CalculatorApiTests {
 	
-	
 
 	
 	public static String getCurrectValue() {
 		
 		RestAssured.baseURI = "https://qa-test-rpncalc.azurewebsites.net/";
 		 
-		
 		Response response = given().contentType(ContentType.JSON). 
 				
 		when().get("/api/RpnCalc/stack").
 		
 		then().log().all().extract().response();
 		
-	Assert.assertEquals(200, response.statusCode());	
+		Assert.assertEquals(200, response.statusCode());	
 		
 		return response.body().asString();
 	}
@@ -62,46 +60,26 @@ public class CalculatorApiTests {
 	
 	}
 	
-	
-	@Test
-	public void  testingAddition() {
-		
-		deleteMethod();
-		addNumber("10");
-		addNumber("10");
-		performOperation("Addition",200);
-		String expected = getCurrectValue();
-		System.out.print("EXPECTED    " + expected.toString());
-		Assert.assertEquals(expected, "[20]");
-		
-		
-		
-	}
-	
-	
-	
-	
-	
+//	
 //	@Test
-//	public void numberTwoTest() {
+//	public void  testingAddition() {
 //		
-//		RestAssured.baseURI = "https://qa-test-rpncalc.azurewebsites.net/";
-//		 
+//		deleteMethod();
+//		addNumber("10");
+//		addNumber("10");
+//		performOperation("Addition",200);
+//		String expected = getCurrectValue();
+//		System.out.print("EXPECTED    " + expected.toString());
+//		Assert.assertEquals(expected, "[20]");
 //		
-//		Response response = given().contentType(ContentType.JSON). 
-//				
-//		when().post("/api/RpnCalc/push?value=3").
 //		
-//		then().log().all().extract().response();
 //		
-//		Assert.assertEquals(200, response.statusCode());
-//	
-//	
-//	
-//	
-//	
-//	
 //	}
+	
+	
+	
+	
+	
 	
 	
 	
@@ -127,20 +105,20 @@ public class CalculatorApiTests {
 	
 
 
-//@Test
-//public void  negativeDevisionByZero() {
-//	
-//	deleteMethod();
-//	addNumber("10");
-//	addNumber("0");
-//	performOperation("Division",500);
-//	String expected = getCurrectValue();
-//	System.out.print("EXPECTED    " + expected.toString());
-//	Assert.assertEquals(expected, "[]");
-//	
-//	
-//	
-//}
+@Test
+public void  negativeDivisionByZero() {
+	
+	deleteMethod();
+	addNumber("10");
+	addNumber("0");
+	performOperation("Division",500);
+	String expected = getCurrectValue();
+	System.out.print("EXPECTED    " + expected.toString());
+	Assert.assertEquals(expected, "[]");
+	
+	
+	
+}
 
 
 //@Test
