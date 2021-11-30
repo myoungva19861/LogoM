@@ -1,0 +1,74 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-30T14:40:00.410Z",
+        "line": 4,
+        "name": "Validating ability to submit a contact form",
+        "description": "",
+        "id": "contact-page-submit;validating-ability-to-submit-a-contact-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3127000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Validate the user is on home page",
+            "match": {
+              "location": "com.qa.logomedia.stepDefs.LogoMediaStepDefinitions.validateTheUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 854000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Validate the user clicks on Contact button and lands on Contact Page",
+            "match": {
+              "location": "com.qa.logomedia.stepDefs.LogoMediaStepDefinitions.validateTheUserClicksOnContactButtonAndLandsOnContactPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7044000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Validate the user fills out the form and clicks on Submit button",
+            "match": {
+              "location": "com.qa.logomedia.stepDefs.LogoMediaStepDefinitions.validateTheUserFillsOutTheFormAndClicksOnSubmitButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Contact Page Submit",
+    "description": "",
+    "id": "contact-page-submit",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/logomedia/features/SubmitContactPage.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 3
+        }
+      }
+    ]
+  }
+]
